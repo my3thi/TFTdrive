@@ -18,7 +18,7 @@ void ISR_KeyPress_SW0(void)
 {
     static uint32_t lastTime;
     if ((millis() - lastTime) < 500)
-        return; // 防抖
+        return; // 防抖动
     lastTime = millis();
     flagX.bKeyPressSW0 = true;
 };
@@ -26,7 +26,7 @@ void ISR_KeyPress_SW1(void)
 {
     static uint32_t lastTime;
     if ((millis() - lastTime) < 500)
-        return; // 防抖
+        return; // 防抖动
     lastTime = millis();
     flagX.bKeyPressSW1 = true;
 };
@@ -34,7 +34,7 @@ void ISR_KeyPress_SW2(void)
 {
     static uint32_t lastTime;
     if ((millis() - lastTime) < 500)
-        return; // 防抖
+        return; // 防抖动
     lastTime = millis();
     flagX.bKeyPressSW2 = true;
 };
@@ -42,7 +42,7 @@ void ISR_KeyPress_SW3(void)
 {
     static uint32_t lastTime;
     if ((millis() - lastTime) < 500)
-        return; // 防抖
+        return; // 防抖动
     lastTime = millis();
     flagX.bKeyPressSW3 = true;
 };
