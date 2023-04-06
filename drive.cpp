@@ -18,7 +18,7 @@ void ISR_KeyPress_SW0(void)
 {
     static uint32_t lastTime;
     if ((millis() - lastTime) < 500)
-        return; // 防抖动
+        return; // 防抖动*
     lastTime = millis();
     flagX.bKeyPressSW0 = true;
 };
